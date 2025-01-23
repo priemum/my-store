@@ -9,7 +9,7 @@ const cartRoutes = require('./routes/cart');
 const languageMiddleware = require('./middlewares/language'); // استيراد middleware اللغة
 const setupRealTimeNotifications = require('./realTime/notifications'); // استيراد نظام الإشعارات الفورية
 require('dotenv').config(); // تحميل متغيرات البيئة من .env
-
+  
 const app = express();
 const server = http.createServer(app); // إنشاء خادم HTTP لتشغيل Socket.io
 
